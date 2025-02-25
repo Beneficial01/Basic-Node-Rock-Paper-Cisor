@@ -1,4 +1,8 @@
-// Run npm install prompt-sync if you don't have it
+/* 
+* Run npm install prompt-sync if you don't have it.
+* We pass a configuration object with signal interrupt to true to make sure the user can exit at will
+* and is not forced to play our game (snif).
+*/
 const prompt = require('prompt-sync')({sigint: true});
 
 function playGame(){
